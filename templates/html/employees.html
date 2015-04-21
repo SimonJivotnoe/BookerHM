@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Employees List</title>
+    <link href="templates/css/employees.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<a href="/index.php" class="col-md-1 homeButton">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+	Home</span>
+
+</a>
+<div class="col-md-6 col-md-offset-2 well">
+    <div class="col-md-12 tHead">
+        <div class="col-md-4">User Name</div>
+        <div class="col-md-4">Edit</div>
+        <div class="col-md-4">Delete</div>
+    </div>
+    <div class="row col-md-12">
+        <div class="panel-group" id="accordion">
+            %EMPLOYEELIST%
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseAdd">
+                            <span class="col-md-4 col-md-offset-4">
+                                <button type="button" class="btn btn-warning">Add a new Employee</button></span> </a>
+                    </h4>
+                </div>
+                <div id="collapseAdd" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <form method="POST" class="newUser">
+                            <table class="table col-md-8 table-striped">
+                                <tbody>
+                                <tr>
+                                    <th>Login</th>
+                                    <th>Password</th>
+                                    <th>Email</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="textfield" name="login"/></td>
+                                    <td><input type="textfield" name="pass"/></td>
+                                    <td><input type="textfield" name="email"/></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-success pull-right newUserButton">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="templates/js/jquery-1.11.2.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap.min.css">
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<script src="templates/libs/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+<script src="templates/js/functions.js"></script>
+<script src="templates/js/ajaxEvents.js"></script>
+<script src="templates/js/employees.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="templates/js/jquery-1.11.2.min.js"></script>
+    <script src="templates/js/auth.js"></script>
+    <script src="templates/js/ajaxEvents.js"></script>
+    <link href="templates/css/main.css" rel="stylesheet" type="text/css" />
+    <title>%AUTH%</title>
+</head>
+<body>
+<div class="col-md-2 col-md-offset-9">
+    <div class="lang col-md-3">
+        <form method="POST">
+            <input type="submit" class="btn btn-warning" name="lang" value="en"/></form>
+    </div>
+    <div class="lang">
+        <form method="POST">
+            <input type="submit" class="btn btn-warning" name="lang" value="ru"/></form>
+    </div>
+</div>
+<h2 id="wellcome"><span class="glyphicons glyphicons-scuba-diving">%WELLCOME%</span></h2>
+<div class="col-md-5 col-md-offset-3 well loginFormWrapper">
+<form method="POST" class="authForm" name="signIn">
+    <div class="form-group col-md-4">
+        <label for="exampleInputName2">%NAME%</label>
+        <input type="text" name="loginAF" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+        <div class="loginERR noUser"></div>
+    </div>
+    <div class="form-group col-md-4">
+        <label for="exampleInputPassword1">%PASSWORD%</label>
+        <input type="password" name="passAF" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <div class="passERR"></div>
+    </div>
+    <div class="col-md-3" >
+    <button type="button" class="btn btn-success pull-right buttonSignIn">Sign in</button>
+        </div>
+</form>
+    </div>
+
+
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<script src="templates/libs/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

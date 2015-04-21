@@ -1,0 +1,9 @@
+body{
+    background-color: #a2be9a !important;
+}
+.headName {
+    background-color: #cbfdcb;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+}

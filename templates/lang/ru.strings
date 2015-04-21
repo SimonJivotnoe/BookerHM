@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ISTRINGTABLE ID="joomla" LANG="en">
+    <ISTRING>
+        <KEY>WELLCOME</KEY>
+        <VALUE>Добро пожаловать в Букер</VALUE>
+    </ISTRING>
+    <ISTRING>
+        <KEY>AUTH</KEY>
+        <VALUE>Страница авторизации Букера</VALUE>
+    </ISTRING>
+    <ISTRING>
+            <KEY>NAME</KEY>
+            <VALUE>Логин</VALUE>
+    </ISTRING>
+     <ISTRING>
+                <KEY>PASSWORD</KEY>
+                <VALUE>Пароль</VALUE>
+        </ISTRING>
+             <ISTRING>
+         <KEY>USER LOGIN</KEY>
+       <VALUE>Логин</VALUE>
+     </ISTRING>
+     <ISTRING>
+         <KEY>USER PASSWORD</KEY>
+       <VALUE>Пароль</VALUE>
+     </ISTRING>
+     <ISTRING>
+         <KEY>EMAIL ADDRESS</KEY>
+       <VALUE>Электронная почта</VALUE>
+     </ISTRING>
+</ISTRINGTABLE>

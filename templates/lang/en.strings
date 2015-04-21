@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ISTRINGTABLE ID="joomla" LANG="en">
+    <ISTRING>
+        <KEY>WELLCOME</KEY>
+        <VALUE>Wellcome to Booker</VALUE>
+    </ISTRING>
+    <ISTRING>
+        <KEY>AUTH</KEY>
+        <VALUE>Booker authorization page</VALUE>
+    </ISTRING>
+    <ISTRING>
+            <KEY>NAME</KEY>
+            <VALUE>Name</VALUE>
+    </ISTRING>
+     <ISTRING>
+                <KEY>PASSWORD</KEY>
+                <VALUE>Password</VALUE>
+        </ISTRING>
+        <ISTRING>
+    <KEY>USER LOGIN</KEY>
+  <VALUE>Login</VALUE>
+</ISTRING>
+<ISTRING>
+    <KEY>USER PASSWORD</KEY>
+  <VALUE>Password</VALUE>
+</ISTRING>
+<ISTRING>
+    <KEY>EMAIL ADDRESS</KEY>
+  <VALUE>Email address</VALUE>
+</ISTRING>
+</ISTRINGTABLE>

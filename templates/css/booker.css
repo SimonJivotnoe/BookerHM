@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    /*background-color: snow !important;*/
+    /*background-color: rgba(71, 151, 126, 0.3) !important;*/
+    background-color: rgba(100, 100, 100, 0.4) !important;
+    display: none;
+}
+
+#weekBegin {
+    min-width: 116px;
+}
+
+.monthYear {
+    margin-bottom: 10px;
+}
+
+#monthYear {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    background-color: #0B3235;
+    border-top: 1px solid #2b19fe;
+    border-bottom: 1px solid #2b19fe;
+    text-shadow: 1px 1px 2px black, 0 0 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.glyphicon-menu-left, .glyphicon-menu-right {
+    font-size: 20px;
+}
+
+.inactiveDay {
+    background: rgba(97, 137, 111, 0.3);
+}
+
+th {
+    background-color: #2e6ea4;
+    text-align: center !important;
+    text-shadow: 1px 1px 2px black, 0 0 1em;
+    color: white;
+}
+
+td {
+    background-color: #fdfdfe;
+}
+
+td div {
+    min-height: 70px;
+   /* max-height: 70px;*/
+    min-width: 120px;
+    /*max-width: 180px;*/
+}
+
+td:hover {
+    border: 1px solid #3e76ee;
+    border-radius: 5px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,.6);
+}
+.inactiveDay:hover {
+    border:none;
+}
+
+
+.bookIt {
+    margin-top: 120px;
+    width: 115px;
+    text-align: center;
+}
+
+.employeeList {
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bookerTextArea {
+    resize: none;
+    overflow-x: auto;
+}
+.ulWrapper{
+    height: 20px;
+    overflow-x: hidden;
+    max-height: 20px;
+    border: #ffffff solid 1px;
+}
+
+.ulWrapper ul li{
+    font-size: 11px;
+    margin-left: -30px;
+}
+
+table {
+    box-shadow: 0 10px 15px rgba(0,0,0,.6);
+
+}
+.tableWrapper{
+    padding: 20px 10px;
+}
+
+.weekend {
+    color: red;
+    background-color: #fdfdfe;
+
+}
+.dayOfWeek {
+    text-shadow: 1px 1px 2px black, 0 0 1em;
+}
+
+.activeDay {
+    color: #1a20ff;
+}
+.glyphicon-ok {
+    color: #21a50c;
+}
+.glyphicon-minus {
+    color: red;
+}
+.welcome {
+    /*background-color: #21a50c;*/
+}

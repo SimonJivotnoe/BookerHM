@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Edit / Update</title>
+    <link href="templates/css/edit.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="col-md-12 headName">
+    B.B. DETAILS
+</div>
+<form id='editForm' name='editForm' method='POST'>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td class="headName">Start:</td>
+            <td>
+                <select class="startHour" name="startHour">
+                    %START%
+                </select>
+                <select class="startMin" name="startMin">
+                    <option value="0">00</option>
+                    <option value="30">30</option>
+                </select>
+                <span class="col-md-3 startTimeFormat">
+
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td class="headName">End:</td>
+            <td>
+                <select class="endHour" name="endHour">
+                    %END%
+                </select>
+
+                <select class="endMin" name="endMin">
+                    <option value="0">00</option>
+                    <option value="30">30</option>
+                </select>
+                <span class="col-md-3 endTimeFormat">
+
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td class="headName">Notes:</td>
+            <td><input type="text" name="description" value="%DESCRIPTION%"/></td>
+        </tr>
+        <tr>
+            <td class="headName">Who:</td>
+            <td><select name="">
+                %USER%
+            </select></td>
+        </tr>
+        </tbody>
+    </table>
+    submitted %SUBMITTED%
+    %RECURRENT%
+    %BUTTONS%
+
+</form>
+
+<script src="templates/js/jquery-1.11.2.min.js"></script>
+<script src="templates/js/edit.js"></script>
+<script src="templates/js/functions.js"></script>
+<script src="templates/js/ajaxEvents.js"></script>
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<script src="templates/libs/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+</body>
+</html>

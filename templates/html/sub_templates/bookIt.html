@@ -1,0 +1,111 @@
+<!-- Modal -->
+<div class="modal fade" id="bookIt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Book the Boardroom
+                    <span id="roomN"></span>
+                </h4>
+            </div>
+            <form id='bookForm' name='bookForm' method='POST'>
+            <div class="modal-body">
+
+                    <div class="col-md-12">1. Booked for:</div>
+                    <div class="col-md-4">
+                       <select class="form-control">
+                           %USERSLIST%
+                        </select>
+                    </div>
+                    <div class="col-md-12">2. I would like to book this meeting:</div>
+                    <div class="col-md-4 bookItMonthWrapper">
+                        <select class="form-control bookItMonth" name="formMonth">
+
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control bookItDate" name="formDate">
+
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control bookItYear" name="formYear">
+
+                        </select>
+                    </div>
+                    <div class="col-md-1 checkDate"></div>
+
+                    <div class="col-md-12">3. Specify what the time and end of the meeting (This will be what people see
+                        on the calendar.):
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <select class="form-control startHour" name="startHour">
+
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control startMin" name="startMin">
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 startTimeFormat">
+
+                        </div>
+                    </div>
+                    <div class="col-md-10">&nbsp</div>
+                    <div class="col-md-2 checkTime"></div>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <select class="form-control endHour" name="endHour">
+
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control endMin" name="endMin">
+                                <option value="30">30</option>
+                                <option value="00">00</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 endTimeFormat">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">4. Enter the specifics for the meeting (This wil be what people see when they
+                        click on an event
+                        link.):
+                    </div>
+
+                    <textarea class="form-control bookerTextArea" name="bookerTextArea" rows="3"></textarea>
+
+                    <div class="col-md-12">5. Is this going to be a recurring event?</div>
+
+                    <input type="radio" name="recurring" class="offRec" value="0" checked required>
+                    No<br/>
+                    <input type="radio" name="recurring" class="onRec" value='1' required> Yes<br/>
+
+                    <div class="col-md-12">6. If it is recurring, specify weekly, bi-weekly or monthly.
+                        <span class="checkRec"></span>
+                    </div>
+                <div class="recWrapper">
+                    <input id="recursion_1" type="radio" name="recurringRes" value='7' checked>
+                    <span class="recurring"> weekly</span><br/>
+                    <input id="recursion_2" type="radio" name="recurringRes" value='14'>bi-weekly<br/>
+                    <input id="recursion_3" type="radio" name="recurringRes" value='28'>monthly<br/>
+                    <span>duration (max 4 weeks)</span>
+                    <input id="duration" value='1' type="number" min="1" max="4" name="duration"
+                           maxlength="1" size="4"/>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary newBookItButton" disabled>Book</button>
+            </div></form>
+        </div>
+    </div>
+</div>

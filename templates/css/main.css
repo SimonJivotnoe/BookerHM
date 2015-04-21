@@ -1,0 +1,22 @@
+.buttonSignIn{
+    margin-top: 22px;
+}
+body {
+    background: #60805c !important;
+}
+#wellcome {
+    text-align: center;
+    font-weight: bold;
+    color:white;
+	margin-right:10%;
+}
+#wellcome span {
+box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    padding: 10px;
+	text-shadow: 1px 1px 2px black, 0 0 1em;
+    color: white; 
+}
+.loginERR, .passERR, .noUser {
+color: red;
+	text-shadow: 1px 1px 2px black;
+}

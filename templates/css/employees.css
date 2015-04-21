@@ -1,0 +1,46 @@
+.homeButton {
+    background-color: rgba(53, 44, 44, 0.5);
+    height: 100vh;
+    color: #080808;
+}
+
+.glyphicon-chevron-left {
+    margin-top: 50vh;
+}
+
+.homeButton:hover {
+    background-color: rgba(53, 44, 44, 0.8);
+}
+
+.glyphicon-pencil:hover {
+    color: blue;
+}
+
+.glyphicon-remove:hover {
+    color: red;
+    cursor: pointer;
+}
+.glyphicon-pencil {
+    font-size: 19px;
+}
+
+.glyphicon-remove {
+    font-size: 19px;
+}
+.panel-heading {
+    height: 50px;
+}
+
+.tHead {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+#accordion {
+    margin-left: 20px
+}
+
+.userName {
+    font-weight: bold;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booker</title>
+    <link href="templates/css/booker.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="well">
+%MODAL%
+<div class="col-md-8 col-md-offset-1 welcome">
+    <div class="col-md-2">
+        Welcome, %WELCOME%
+    </div>
+    <div class="col-md-2">
+        <input type="submit" class="btn btn-danger logOff" value="Log Off"/>
+    </div>
+    <div class="col-md-2 col-md-offset-2">
+        <select name="rooms" class="rooms">
+            %ROOMS%
+        </select>
+    </div>
+    <div class="col-md-3 col-md-offset-1">
+        <div class="lang col-md-3">
+            <form method="POST">
+                <input type="submit" class="btn btn-warning" name="lang" value="en"/></form>
+        </div>
+        <div class="col-md-4 lang">
+            <form method="POST">
+                <input type="submit" class="btn btn-warning" name="lang" value="ru"/></form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="monthYear col-md-2 col-md-offset-1">
+        <button class="btn btn-primary" id="weekBegin"></button>
+    </div>
+    <div class="monthYear col-md-3 col-md-offset-1">
+        <button type="button" class="btn btn-primary col-md-3" id="previous"><span class="glyphicon glyphicon-menu-left"
+                                                                                   aria-hidden="true"></span></button>
+        <span class="col-md-6" id="monthYear"></span>
+        <button type="button" class="btn btn-primary col-md-3" id="next"><span class="glyphicon glyphicon-menu-right"
+                                                                               aria-hidden="true"></span></button>
+    </div>
+    <div class="timeFormat col-md-2 col-md-offset-2">
+        <button class="btn btn-primary" id="timeFormat"></button>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="col-md-9 col-md-offset-1 tableWrapper">
+        <table border="1" class="mainTable">
+            <tbody id="calendarTable">
+
+            </tbody>
+
+        </table>
+    </div>
+    <div class="col-md-2">
+        <div class="col-md-12">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary bookIt" data-toggle="modal" data-target="#bookIt">
+                Book It!
+            </button>
+        </div>
+        %EMPLOYEELISTBUTTON%
+    </div>
+</div>
+
+<script src="templates/js/jquery-1.11.2.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="templates/libs/bootstrap/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<script src="templates/libs/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+
+<script src="templates/js/calendar.js"></script>
+<script src="templates/js/ajaxEvents.js"></script>
+<script src="templates/js/functions.js"></script>
+<script src="templates/js/HTMLBuilder.js"></script>
+<script src="templates/js/jquery.cookie.js"></script>
+</body>
+
+</html>
