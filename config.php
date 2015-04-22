@@ -1,8 +1,8 @@
 <?php
 define ('HOST', 'localhost');
-define ('USER', 'root');
-define ('PASS', '');
-define ('DB', 'booker');
+define ('USER', 'user1');
+define ('PASS', 'tuser1');
+define ('DB', 'user1');
 define ('TEMPLATES', 'templates/html/');
 define ('SUBTEMPLATES', 'templates/html/sub_templates/');
 define ('INDEX', 'index.html');

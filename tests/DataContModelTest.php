@@ -6,7 +6,7 @@ include dirname(__FILE__). '/../view/SubstitutionModel.php';
 include dirname(__FILE__). '/../models/PDOModel.php';
 include dirname(__FILE__). '/../config.php';
 
-class EditPaletteModelTest extends PHPUnit_Framework_TestCase {
+class DataContModelTest extends PHPUnit_Framework_TestCase {
 	
 	public function testgetArr(){
 		$data = DataContModel::getInstance();
@@ -18,9 +18,14 @@ class EditPaletteModelTest extends PHPUnit_Framework_TestCase {
 		array(array('user_name' => 'user1', 'user_id' => 9)),
 		array()		
 		);
+		$page = 'index.html';
+		$role = 'admin';
 		$data->setData($arr);
-		$obj = new EditPaletteModel();
-		$this->assertTrue(is_array($obj->getArr()));
+		$data->setStartPage($page);
+		$data->setRole($role);
+		$this->assertTrue(is_array($data->getData()));
+		$this->assertTrue(is_array($data->getStartPage()));
+		$this->assertEquals($role, $data->getRole());
 		}
 }
 
