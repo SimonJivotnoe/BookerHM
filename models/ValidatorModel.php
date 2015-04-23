@@ -1,25 +1,19 @@
 <?php
-
 /**
  * Class ValidatorModel
  */
 class ValidatorModel
 {
-
     private $errorsMess = array();
     private $variablesArray = array();
-
     public function __construct()
     {
     }
-
     private function stripTagsAndTrim($checkValue)
     {
         $checkRes = strip_tags(trim($checkValue));
-
         return $checkRes;
     }
-
     private function checkValues($val, $name){
         if (strlen($val) <= 3 || strlen($val) >= 10){
             $this->errorsMess[ $name .'ERR' ] = $name .' length must be more 3 and less then 10 symbols';
@@ -29,7 +23,6 @@ class ValidatorModel
             return true;
         }
     }
-
     public function formValidation($login, $pass)
     {
         $loginCheck = $this->stripTagsAndTrim($login);
@@ -42,7 +35,15 @@ class ValidatorModel
             return false;
         }
     }
-
+    public function emailCheck($email){
+        $res = filter_var($email, FILTER_VALIDATE_EMAIL);
+        if ($res) {
+            return $res;
+        } else {
+            $this->errorsMess[ 'EMAIL_ERR' ] = 'Wrong EMAIL Format';
+            return $res;
+        }
+    }
     public function checkTime($arr, $start, $end){
         $check = 0;
         foreach ($arr as $key => $val) {
@@ -54,11 +55,9 @@ class ValidatorModel
         }
         return $check;
     }
-
     public function getErrMess(){
         return $this->errorsMess;
     }
-
     /**
      * @return array
      */
