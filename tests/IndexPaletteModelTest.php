@@ -2,7 +2,6 @@
 include dirname(__FILE__). '/../models/IndexPaletteModel.php';
 include dirname(__FILE__). '/../models/DataContModel.php';
 include dirname(__FILE__). '/../config.php';
-
 class IndexPaletteModelTest extends PHPUnit_Framework_TestCase {
 	
 	public function testgetArr(){
@@ -10,4 +9,3 @@ class IndexPaletteModelTest extends PHPUnit_Framework_TestCase {
 		$this->assertTrue(is_array($obj->getArr()));
 		}
 }
-

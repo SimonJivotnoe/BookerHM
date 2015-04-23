@@ -3,7 +3,6 @@ include dirname(__FILE__). '/../models/ValidatorModel.php';
 include dirname(__FILE__). '/../models/AgentPDOModel.php';
 include dirname(__FILE__). '/../models/PDOModel.php';
 include dirname(__FILE__). '/../config.php';
-
 class ValidatorModelTest extends PHPUnit_Framework_TestCase {
 	
 	public function testformValidation(){
@@ -15,7 +14,6 @@ class ValidatorModelTest extends PHPUnit_Framework_TestCase {
 		$this->assertTrue($obj->formValidation($login, $pass));
 		$this->assertFalse($obj->formValidation($login2, $pass2));
 		}
-
 	public function testgetErrMess() {
 		$obj = new ValidatorModel();
 		$this->assertTrue(is_array($obj->getErrMess()));
@@ -36,4 +34,3 @@ class ValidatorModelTest extends PHPUnit_Framework_TestCase {
 		}	
 	
 	}
-
